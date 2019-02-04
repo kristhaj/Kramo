@@ -1,6 +1,8 @@
 
+
 #header-container
   nav.nav#header(class=['is-' + appconfig.theme.primary], ref='header')
+    include ./common/navigation.pug
     .nav-left
       block rootNavLeft
         a.nav-item(href='/')
@@ -17,3 +19,5 @@
     .nav-right
       block rootNavRight
         loading-spinner
+
+
