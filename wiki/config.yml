@@ -72,8 +72,8 @@ git:
   branch: master
   auth:
     type: ssh
-    username: marty
-    password: MartyMcFly88
+    username: ${UNAME}
+    password: ${PASS}
     privateKey: /etc/wiki/keys/git.pem
     sslVerify: true
   showUserEmail: true
