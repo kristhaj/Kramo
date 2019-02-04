@@ -167,11 +167,16 @@ app.use(mw.flash)
 // Controllers
 // ----------------------------------------
 
-app.use('/', ctrl.auth)
+app.use('/', ctrl.front)
 
 app.use('/uploads', mw.auth, ctrl.uploads)
 app.use('/admin', mw.auth, ctrl.admin)
-app.use('/', mw.auth, ctrl.pages)
+//app.use('/', mw.auth, ctrl.pages)
+
+app.use('/front', ctrl.front)
+app.use('/history', ctrl.history)
+app.use('/info', ctrl.info)
+app.use('/meetings', ctrl.meeting)
 
 // ----------------------------------------
 // Error handling
